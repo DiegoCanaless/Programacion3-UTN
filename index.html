@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrabajoPractico1</title>
+</head>
+<body>
+    <!-- 
+        Hola profe una consulta, en la rubrica de lo evaluado sale el uso del <span> y no lo inclui
+        porque por lo que se es mas recomendable usar un <p> mayormente para que los lectores de pantalla
+        si puedan detectar esa informacion
+
+        Y tambien tengo una duda sobre los h1 porque inicialmente me decian que solo podia haber un h1 y 
+        evitar repetir tantos h2,h3,h4. Intendo que solo existan 2-h2, 3-h3 y siguiendo esa logica con los demas
+        ¿Esto sigue siendo asi?
+
+    -->
+    
+
+    <!--  4.1  -->
+     <h1>1.Estructura Basica del Documento HTML</h1>
+     <p>Este documento HTML, tiene una estructura basica que incluye la declaracion de DOCTYPE, etiquetas de metadatos y un titulo.</p>
+
+     <!--  4.2  -->
+    <h2>2.Encabezados y Propiedades del Texto</h2>
+    <h3 style="font-weight: bold;">Este es un texto en negrita.</h3>
+    <h4 style="font-style: italic;">Este es un texto en cursiva.</h4>
+    <h5 style="text-decoration: underline;">Este es un texto subrayado.</h5>
+
+
+    <!--  4.3  -->
+    <h2>3.Divisiones y Agrupacion de Contenido</h2>
+    <div>
+        <h3>Seccion 1</h3>
+        <p>Contenido de la primera seccion agrupada en un div.</p>
+    </div>
+    <div>
+        <h3>Seccion 2</h3>
+        <p>Contenido de la segunda seccion agrupada en un div</p>
+    </div>
+
+    <!--  4.4  -->
+      <p> Jersualen</p>
+      <span> JERUSALEN </span>
+      <p> JERUSALEN</p>
+
+    <h2>4.Enlaces y Listas</h2>
+    <p>Visita nuestro <a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank" >sitio web</a> para mas informacion</p>
+    <h4>Enlaces internos:</h4>
+    <ul>
+        <li><a href="#multimedia" rel="noopener noreferrer">Ir a Multimedia</a></li>
+        <li><a href="#estructura" rel="noopener noreferrer">Ir a Estructura</a></li>
+        <li><a href="#formulario" rel="noopener noreferrer">Ir a Formulario</a></li>
+    </ul>
+    <h4>Lista desordenada:</h4>
+    <ul>
+        <li>Primer item de una lista desordenada</li>
+        <li>Segundo item de una lista desordenada</li>
+    </ul>
+    <h4>Lista ordenada:</h4>
+    <ol>
+        <li>Primer item de una lista ordenada</li>
+        <li>Segundo item de una lista ordenada</li>
+    </ol>
+
+    
+    <!--  4.5  -->
+
+    <h2 id="multimedia">5.Elementos Multimedia</h2>
+    <img src="assets/foto.webp" alt="Momo Serio" height="200" width="400">
+    <video src="assets/1437396-uhd_3840_2160_24fps.mp4" height="300" width="600" controls></video>
+    <audio src="assets/Y2meta.app - ME LLAMA - MOMO (Beret) (128 kbps).mp3" controls></audio>
+
+    <!--  4.6  -->
+    <h2>6.Tablas</h2>
+    <table style="border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black;">Columna 1</th>
+            <th style="border: 1px solid black;">Columna 2</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Dato 1</td>
+            <td style="border: 1px solid black;">Dato 2</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Dato 3</td> 
+            <td style="border: 1px solid black;">Dato 4</td>
+        </tr>
+    </table>
+
+    <!--  4.7  -->
+    <h2 id="formulario">7.Formulario</h2>
+
+    <form action="">
+        <label>Nombre</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Mensaje</label>
+        <textarea name="" id="" width="200"></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!--  4.8  -->
+    <!-- Considere esto como simulando una pagina uso repetido del h1 -->
+
+    <h2 id="estructura">8.Semantica</h2>
+    <header>
+        <h1>Encabezado Principal</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#estructura" rel="noopener noreferrer">Estructura</a></li>
+            <li><a href="#multimedia" rel="noopener noreferrer">Multimedia</a></li>
+            <li><a href="#formulario" rel="noopener noreferrer">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>1.Estructura Basica del Documento HTML</h2>
+        <article>
+            <p>Descripcion de la estructura...</p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <aside>
+                <p>Informacion Complementaria...</p>
+            </aside>
+        </article>
+    </section>
+
+    <footer>
+        <p>2024 Trabajo Practico de HTML</p>
+    </footer>
+</body>
+</html>
